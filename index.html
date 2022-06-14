@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="100%, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="heading-splitter">SPLI<span>TTER</span></h1>
+
+  <div class="white-container">
+    <div class="lhs">
+      <div class="bill-container">
+        <img src="images/icon-dollar.svg">
+        <label for="Bill">Bill</label><br>
+        <input type="decimal" id="bill" placeholder="0">
+      </div>
+
+      <div class="tip-percent-container">
+        <label for="tip">
+          Select Tip %</label>
+        <div class="grid-tip">
+          <div class="grid-card" id="card-tip-1">5%</div>
+          <div class="grid-card" id="card-tip-2">10%</div>
+          <div class="grid-card" id="card-tip-3">15%</div>
+          <div class="grid-card" id="card-tip-4">25%</div>
+          <div class="grid-card" id="card-tip-5">50%</div>
+          <div class="grid-card" id="card-tip-6">Custom</div>
+          <input class="grid-card hidden" id="card-tip-cust">
+
+        </div>
+
+      </div>
+      <div class="people-container">
+        <img src="images/icon-person.svg">
+
+        <label for="NumPeep">Number of People</label><br>
+        <input type="text" min="1" max="20" id="numpeep" placeholder="0">
+        <p class="people-container hidden" id="invalid-people">Can't be zero</p>
+
+      </div>
+
+
+    </div>
+
+    <div class="rhs">
+
+      <div class="tip-amount-container">
+
+        <div id="tip-amt" class="amt">
+
+          Tip Amount
+          <span class="person">
+            / person</span>
+
+        </div>
+        <div class="amount" id="tip-amount">$0.00</div>
+
+      </div>
+
+      <div class="tip-amount-container">
+
+        <div id="total-amt" class="amt">
+          Total
+          <span class="person">
+            / person</span>
+
+        </div>
+        <div class="amount" id="total-amount">$0.00</div>
+      </div>
+
+      <button class="reset">
+
+        RESET
+      </button>
+    </div>
+
+  </div>
+  <div class="overlay"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">5ru5h23</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
